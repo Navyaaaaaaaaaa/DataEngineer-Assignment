@@ -103,6 +103,13 @@ sqlite3 movies.db < queries.sql
 ```
 * For connecting database right click on `movies.db` and select "connect database".Now it will show your database table.
 * For running queries select one query from `queries.sql` and right clik on selected query then select Run query. Now it will run the query which you have selected.
+
+I set limit to first 30 for testing .
+* ```bash
+  for i, row in movies.head(29).iterrows():
+  ```
+
+
 ---
 
 ## Design Choices and Assumptions
