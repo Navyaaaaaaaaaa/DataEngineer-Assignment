@@ -16,7 +16,7 @@ The primary objectives of this project are:
 
 ### Prerequisites
 
-* **Python 3.10+** installed on your system.
+* **Python 3.10+** installed on my system.
 * Internet access (required for OMDb API calls).
 
 ### Required Libraries
@@ -33,10 +33,22 @@ pip install pandas requests sqlalchemy rapidfuzz unidecode
 2. Generate a free API key.
 3. Set the key as an environment variable in your terminal:
 
-   **Windows (PowerShell):**
+   Open VS Code Terminal (PowerShell or Command Prompt).
+   Run this PowerShell command (note the $env: syntax):
 
    ```bash
-   set OMDB_API_KEY=your_api_key_here
+   setx OMDB_API_KEY "c54f36a8"
+
+  You should see:
+    SUCCESS: Specified value was saved.
+    
+ Close your VS Code terminal completely
+ (this is required — setx only affects new sessions).
+
+ Reopen a new VS Code terminal, then check:
+   echo $env:OMDB_API_KEY
+
+ Now you will see your key
    ```
 
   
@@ -87,7 +99,8 @@ To validate or explore the database, open `movies.db` using an SQLite viewer or 
 ```bash
 sqlite3 movies.db < queries.sql
 ```
-
+* For connecting database right click on `movies.db` and select "connect database".Now it will show your database table.
+* For running queries select one query from `queries.sql` and right clik on selected query then select Run query. Now it will run the query which you have selected.
 ---
 
 ## Design Choices and Assumptions
