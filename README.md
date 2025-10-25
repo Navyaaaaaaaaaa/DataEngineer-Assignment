@@ -37,7 +37,7 @@ pip install pandas requests sqlalchemy rapidfuzz unidecode
    Run this PowerShell command (note the $env: syntax):
 
    ```bash
-   setx OMDB_API_KEY "c54f36a8"
+   setx OMDB_API_KEY "enter your API key"
 
   You should see:
     SUCCESS: Specified value was saved.
@@ -49,24 +49,26 @@ pip install pandas requests sqlalchemy rapidfuzz unidecode
    echo $env:OMDB_API_KEY
 
  Now you will see your key
-   ```
 
-  
+ 
 
 ---
+  
+
+
+
 
 ## Project Structure
 
-```
 DataEngineer-Assignment/
-│
-├── etl.py            # Main ETL pipeline script
-├── schema.sql        # Database schema definition
-├── queries.sql       # SQL queries for analytics validation
-├── movies.csv        # Movie dataset
-├── ratings.csv       # Ratings dataset
-└── README.md         # Project documentation
-```
+
+- **etl.py**           # Main ETL pipeline script
+- **schema.sql**        # Database schema definition
+- **queries.sql**       # SQL queries for analytics validation
+- **movies.csv**        # Movie dataset
+- **ratings.csv**       # Ratings dataset
+- **README.md**         # Project documentation
+
 
 ---
 
